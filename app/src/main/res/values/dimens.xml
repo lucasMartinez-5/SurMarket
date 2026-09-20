@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">20sp</dimen>
+    <dimen name="titleMarginTop">30sp</dimen>
+    <dimen name="labelTextSize">17sp</dimen>
+    <dimen name="labelPadding">5sp</dimen>
+    <dimen name="labelMarginTop">12sp</dimen>
+    <dimen name="marginBottom">320sp</dimen>
+</resources>
