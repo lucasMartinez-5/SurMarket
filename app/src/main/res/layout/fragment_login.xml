@@ -1,82 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FragmentLogin">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/FRMContainerPadding"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
         <TextView
-            android:textAlignment="center"
-            android:id="@+id/TXVLoginTitle"
+            android:id="@+id/TXV_FRGLogin_Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/LoginTitle"
-            android:textSize="@dimen/titleTextSize"
+            android:text="@string/FRGLogin_Title"
+            android:textSize="@dimen/FRGTitleTextSize"
             android:textStyle="bold"
-            android:layout_marginTop="@dimen/titleMarginTop"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
             />
         <TextView
-            android:id="@+id/TXVLoginUserName"
-            android:layout_width="wrap_content"
+            android:id="@+id/TXV_FRGLogin_UserName"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/LoginUserName"
-            android:textAlignment="textStart"
-            android:textSize="@dimen/labelTextSize"
-            android:layout_marginTop="@dimen/labelMarginTop"
-            android:padding="@dimen/labelPadding"
+            android:text="@string/FRGLogin_TXVUserName"
+            android:textSize="@dimen/FRGLabelTextSize"
+            android:textStyle="bold"
             />
         <EditText
-            android:id="@+id/ETXLoginUserName"
+            android:id="@+id/ETX_FRGLogin_UserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/LoginUserNameETX"
+            android:hint="@string/FRGLogin_ETXUserName"
+            android:textSize="@dimen/FRGEditTextTextSize"
             android:inputType="text"
+            android:layout_marginBottom="16dp"
             />
         <TextView
-            android:id="@+id/TXVLoginUserPassword"
-            android:layout_width="wrap_content"
+            android:id="@+id/TXV_FRGLogin_Password"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/LoginUserPassword"
-            android:textAlignment="textStart"
-            android:textSize="@dimen/labelTextSize"
-            android:layout_marginTop="@dimen/labelMarginTop"
-            android:padding="@dimen/labelPadding"
+            android:text="@string/FRGLogin_TXVPassword"
+            android:textSize="@dimen/FRGLabelTextSize"
+            android:textStyle="bold"
             />
         <EditText
-            android:id="@+id/ETXLoginUserPassword"
+            android:id="@+id/ETX_FRGLogin_Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/LoginUserPasswordETX"
-            android:inputType="text"
+            android:hint="@string/FRGLogin_ETXPassword"
+            android:textSize="@dimen/FRGEditTextTextSize"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
             />
         <TextView
-            android:id="@+id/TXVRecoveryUserPassword"
+            android:id="@+id/TXV_FRGLogin_RecoveryPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/RecoveryUserPassword"
-            android:textAlignment="textStart"
-            android:textSize="@dimen/labelTextSize"
-            android:layout_marginTop="@dimen/labelMarginTop"
-            android:padding="@dimen/labelPadding"
+            android:text="@string/FRGLogin_RecoveryPassword"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="@dimen/FRGTextView2TextSize"
+            android:layout_marginBottom="30dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             />
         <Button
-            android:textAlignment="center"
-            android:id="@+id/BTNLogin"
+            android:id="@+id/BTN_FRGLogin_Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/TXVRecoveryUserPassword"
-            android:text="@string/Login"
-            android:layout_marginTop="@dimen/marginBottom"
-            android:visibility="visible"/>
+            android:text="@string/FRGLogin_BTNLogin"
+            android:textSize="@dimen/FRGButtonTextSize"
+            android:textStyle="bold"/>
         <Button
-            android:textAlignment="center"
-            android:id="@+id/BTNRegister"
+            android:id="@+id/BTN_FRGLogin_Register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/BTNLogin"
-            android:text="@string/Register"
-            android:layout_marginTop="@dimen/labelMarginTop"
-            android:visibility="visible"/>
+            android:text="@string/FRGLogin_BTNRegister"
+            android:textSize="@dimen/FRGButtonTextSize"
+            android:textStyle="bold"/>
     </LinearLayout>
 </ScrollView>

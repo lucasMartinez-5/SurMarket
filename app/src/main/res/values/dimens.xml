@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="titleTextSize">20sp</dimen>
+    <dimen name="FRGTitleTextSize">24sp</dimen>
     <dimen name="titleMarginTop">30sp</dimen>
     <dimen name="labelTextSize">17sp</dimen>
     <dimen name="labelPadding">5sp</dimen>
     <dimen name="labelMarginTop">12sp</dimen>
     <dimen name="marginBottom">320sp</dimen>
+    <dimen name="FRGLabelTextSize">16sp</dimen>
+    <dimen name="FRMContainerPadding">24dp</dimen>
+    <dimen name="FRGEditTextTextSize">16sp</dimen>
+    <dimen name="FRGTextView2TextSize">14sp</dimen>
+    <dimen name="FRGButtonTextSize">16sp</dimen>
 </resources>
