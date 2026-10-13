@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="FRGTitleTextSize">24sp</dimen>
-    <dimen name="titleMarginTop">30sp</dimen>
+    <dimen name="titleTextSize">32sp</dimen>
+    <dimen name="titleMarginTop">20sp</dimen>
     <dimen name="labelTextSize">17sp</dimen>
-    <dimen name="labelPadding">5sp</dimen>
     <dimen name="labelMarginTop">12sp</dimen>
-    <dimen name="marginBottom">320sp</dimen>
+    <dimen name="labelPadding">10sp</dimen>
+    <dimen name="inputMarginTop">10sp</dimen>
+    <dimen name="inputPadding">15sp</dimen>
+    <dimen name="buttonBottom">40sp</dimen>
+    <dimen name="margin15sp">15sp</dimen>
+    <dimen name="FRGTitleTextSize">24sp</dimen>
+
     <dimen name="FRGLabelTextSize">16sp</dimen>
-    <dimen name="FRMContainerPadding">24dp</dimen>
     <dimen name="FRGEditTextTextSize">16sp</dimen>
+    <dimen name="FRGContainerPadding">24dp</dimen>
     <dimen name="FRGTextView2TextSize">14sp</dimen>
-    <dimen name="FRGButtonTextSize">16sp</dimen>
+    <dimen name="TitleHeight">56dp</dimen>
+    <dimen name="imageViewIconSize">32dp</dimen>
+    <dimen name="imageViewIconPadding">4dp</dimen>
+    <dimen name="cardview_controls">48dp</dimen>
+    <dimen name="cardview_corner_radius">12dp</dimen>
+    <dimen name="FRGButtonTextSize">Añadir Producto</dimen>
 </resources>
