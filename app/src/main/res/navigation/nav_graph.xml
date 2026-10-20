@@ -9,12 +9,20 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="bo.edu.uajms.lucasmartinez.surmarket.FragmentLogin"
-        android:label="@string/labelloginFragment"
+        android:label="@string/labelLoginFragment"
         tools:layout="@layout/fragment_login"
         >
         <action
             android:id="@+id/action_login_to_products_list"
             app:destination="@+id/productsListFragment"
             />
+    </fragment>
+    <fragment
+        android:id="@+id/productsListFragment"
+        android:name="bo.edu.uajms.lucasmartinez.surmarket.FragmentLogin"
+        android:label="@string/labelProducitsListFragment"
+        tools:layout="@layout/fragment_products_list"
+        >
+
     </fragment>
 </navigation>

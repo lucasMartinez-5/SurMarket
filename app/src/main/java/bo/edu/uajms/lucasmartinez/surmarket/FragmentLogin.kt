@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import java.io.FileDescriptor
 import java.io.PrintWriter
 
@@ -62,6 +63,7 @@ class FragmentLogin : Fragment() {
             Toast.makeText(requireContext(),
                 getString(R.string.loginWelcome),
                 Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_login_to_products_list)
         }
         else{
             Toast.makeText(requireContext(),

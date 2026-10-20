@@ -29,4 +29,5 @@
     <dimen name="ITTextViewTextSize">12sp</dimen>
     <dimen name="ITMarginBottom">4dp</dimen>
     <dimen name="button_padding_horizontal">16dp</dimen>
+    <dimen name="FRGMarginTop">90dp</dimen>
 </resources>
