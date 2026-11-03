@@ -63,7 +63,7 @@ class FragmentLogin : Fragment() {
             Toast.makeText(requireContext(),
                 getString(R.string.loginWelcome),
                 Toast.LENGTH_SHORT).show()
-            findNavController().navigate(R.id.action_login_to_products_list)
+            findNavController().navigate(R.id.action_login_to_products_List)
         }
         else{
             Toast.makeText(requireContext(),
@@ -91,6 +91,6 @@ class FragmentLogin : Fragment() {
         return res
     }
     private fun verifyCredentials(user: String, password: String): Boolean {
-        return user=="usuario" && password=="123456"
+        return user=="admin" && password=="123456"
     }
 }

@@ -15,6 +15,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/fragment_padding"
+            android:layout_marginTop="@dimen/FRGMarginTop"
+            android:layout_marginBottom="@dimen/FRGMarginTop"
             >
             <androidx.cardview.widget.CardView
                 android:id="@+id/CRV_FRGAddProduct_Image"
@@ -125,90 +127,76 @@
                 android:padding="@dimen/inputPadding"
                 android:textColorHint="@color/inputColor"
                 />
-            <LinearLayout
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/CHG_FRGAddProduct_Category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-
+                app:singleSelection="true"
                 >
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProduct_Men"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_men"
-                    android:textSize="@dimen/FRGEditTextTextSize"
-                    />
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProduct_Women"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_women"
-                    android:textSize="@dimen/FRGEditTextTextSize"
-                    />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-
-                >
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProduct_Children"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_children"
-                    android:textSize="@dimen/FRGEditTextTextSize"
-                    />
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProduct_Baby"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_baby"
-                    android:textSize="@dimen/FRGEditTextTextSize"
-                    />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-
-                >
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProduct_Shoes"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_shoes"
-                    android:textSize="@dimen/FRGEditTextTextSize"
-                    />
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProduct_Accessories"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_accesories"
-                    android:textSize="@dimen/FRGEditTextTextSize"
-                    />
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProduct_Others"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_others"
-                    android:textSize="@dimen/FRGEditTextTextSize"
-                    />
-            </LinearLayout>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProduct_Men"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/chip_margin_end"
+                        android:text="@string/category_men"
+                        android:textSize="@dimen/FRGEditTextTextSize"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProduct_Women"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/chip_margin_end"
+                        android:text="@string/category_women"
+                        android:textSize="@dimen/FRGEditTextTextSize"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProduct_Children"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/chip_margin_end"
+                        android:text="@string/category_children"
+                        android:textSize="@dimen/FRGEditTextTextSize"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProduct_Baby"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/chip_margin_end"
+                        android:text="@string/category_baby"
+                        android:textSize="@dimen/FRGEditTextTextSize"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProduct_Shoes"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/chip_margin_end"
+                        android:text="@string/category_shoes"
+                        android:textSize="@dimen/FRGEditTextTextSize"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProduct_Accessories"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/chip_margin_end"
+                        android:text="@string/category_accesories"
+                        android:textSize="@dimen/FRGEditTextTextSize"
+                        />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProduct_Others"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/chip_margin_end"
+                        android:text="@string/category_others"
+                        android:textSize="@dimen/FRGEditTextTextSize"
+                        />
+            </com.google.android.material.chip.ChipGroup>
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/CHG_FRGAddProduct_Availability"
                 android:layout_width="match_parent"
@@ -239,10 +227,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_button_rounded"
-                android:layout_marginBottom="@dimen/cardview_default_margin_bottom"
+                android:layout_marginBottom="@dimen/FRGMarginTop"
                 android:textStyle="bold"
                 android:text="@string/FRGAddProduct_BTNAddProduct"
+                android:layout_marginTop="@dimen/item_marginStart"
                 />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/FRGMarginTop"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
