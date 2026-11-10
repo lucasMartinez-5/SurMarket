@@ -49,4 +49,46 @@
     <string name="FRGAddProduct_BTNAddProduct">Añadir Producto</string>
     <string name="labelAddProductsFragment">Añadir Producto</string>
     <string name="addProduct">Añadir Nuevo Producto</string>
+
+    <!-- Profile Strings -->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_username">Usuario123</string>
+    <string name="profile_id">ID: 456789</string>
+    <string name="profile_email_label">Email</string>
+    <string name="profile_email_val">usuario123@email.com</string>
+    <string name="profile_fullname_label">Nombre completo</string>
+    <string name="profile_fullname_val">Juan Pérez</string>
+    <string name="profile_phone_label">Teléfono</string>
+    <string name="profile_phone_val">+52 55 1234 5678</string>
+    <string name="profile_address_label">Dirección</string>
+    <string name="profile_address_val">Calle Principal 123, Ciudad, Estado</string>
+    <string name="profile_regdate_label">Fecha de registro</string>
+    <string name="profile_regdate_val">15 de marzo de 2023</string>
+    <string name="profile_lastaccess_label">Último acceso</string>
+    <string name="profile_lastaccess_val">20 de mayo de 2024, 10:30 AM</string>
+    <string name="profile_groups_label">Grupos</string>
+    <string name="profile_groups_val">Administradores, Usuarios</string>
+    <string name="profile_permissions_label">Permisos</string>
+    <string name="profile_permissions_val">Leer, Escribir, Eliminar</string>
+    <string name="profile_change_password">Cambiar contraseña</string>
+
+    <!-- Bottom Nav Strings -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_cart">Carrito</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Cart Strings -->
+    <string name="cart_title">Carrito de Compras</string>
+    <string name="cart_empty">Tu carrito está vacío</string>
+    <string name="cart_subtotal">Subtotal</string>
+    <string name="cart_total">Total</string>
+    <string name="cart_checkout">Proceder al Pago</string>
+    <string name="cart_item1_name">Polera Casual Urbana</string>
+    <string name="cart_item1_category">Categoría: Ropa de Varón</string>
+    <string name="cart_item1_price">Bs. 120.00</string>
+    <string name="cart_item2_name">Zapatillas Deportivas</string>
+    <string name="cart_item2_category">Categoría: Calzados</string>
+    <string name="cart_item2_price">Bs. 250.00</string>
+    <string name="cart_total_price">Bs. 370.00</string>
+    <string name="delete">Eliminar</string>
 </resources>

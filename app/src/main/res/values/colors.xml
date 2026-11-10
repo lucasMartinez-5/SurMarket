@@ -11,4 +11,10 @@
     <color name="buttonColorGray">#EBF1F5</color>
     <color name="inputFondoGris">#C3C3C3</color>
     <color name="inputLetraGris">#767676</color>
+    <color name="textPrimary">#1E293B</color>
+    <color name="textSecondary">#64748B</color>
+    <color name="iconBackground">#F1F5F9</color>
+    <color name="btnChangePasswordBg">#EEF2F6</color>
+    <color name="navActive">#1E293B</color>
+    <color name="navInactive">#94A3B8</color>
 </resources>

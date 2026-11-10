@@ -35,4 +35,5 @@
     <dimen name="textview_multiline_height">90dp</dimen>
     <dimen name="chip_margin_end">8dp</dimen>
     <dimen name="FRGButtonTextSize">16sp</dimen>
+    <dimen name="FRGMarginTopProfile">50dp</dimen>
 </resources>
