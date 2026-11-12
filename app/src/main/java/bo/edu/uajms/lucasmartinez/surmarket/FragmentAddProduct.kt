@@ -1,6 +1,5 @@
 package bo.edu.uajms.lucasmartinez.surmarket
 
-import android.app.Activity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +12,7 @@ class FragmentAddProduct : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_app_product,container,false)
+        return inflater.inflate(R.layout.fragment_add_product,container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

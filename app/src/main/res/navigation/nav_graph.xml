@@ -27,50 +27,26 @@
             android:id="@+id/action_product_list_to_add_product"
             app:destination="@+id/addProductFragment"
             />
-        <action
-            android:id="@+id/action_products_list_to_cart"
-            app:destination="@+id/cartFragment"
-            />
-        <action
-            android:id="@+id/action_products_list_to_profile"
-            app:destination="@+id/profileFragment"
-            />
     </fragment>
     <fragment
         android:id="@+id/addProductFragment"
         android:name="bo.edu.uajms.lucasmartinez.surmarket.FragmentAddProduct"
         android:label="@string/labelAddProductsFragment"
-        tools:layout="@layout/fragment_products_list"
+        tools:layout="@layout/fragment_add_product"
         >
     </fragment>
     <fragment
-        android:id="@+id/cartFragment"
+        android:id="@+id/CartFragment"
         android:name="bo.edu.uajms.lucasmartinez.surmarket.FragmentCart"
-        android:label="@string/cart_title"
+        android:label="@string/labelCartFragment"
         tools:layout="@layout/fragment_cart"
         >
-        <action
-            android:id="@+id/action_cart_to_products_list"
-            app:destination="@+id/productsListFragment"
-            />
-        <action
-            android:id="@+id/action_cart_to_profile"
-            app:destination="@+id/profileFragment"
-            />
     </fragment>
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/ProfileFragment"
         android:name="bo.edu.uajms.lucasmartinez.surmarket.FragmentProfile"
-        android:label="@string/profile_title"
+        android:label="@string/labelProfileFragment"
         tools:layout="@layout/fragment_profile"
         >
-        <action
-            android:id="@+id/action_profile_to_products_list"
-            app:destination="@+id/productsListFragment"
-            />
-        <action
-            android:id="@+id/action_profile_to_cart"
-            app:destination="@+id/cartFragment"
-            />
     </fragment>
 </navigation>

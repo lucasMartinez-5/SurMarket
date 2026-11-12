@@ -24,6 +24,7 @@ class FragmentProductsList : Fragment() {
     private lateinit var ETX_FRGProductsList_Search: EditText
     private lateinit var BTN_FRGProductsList_AddProduct: Button
     private lateinit var RCV_FRGProductsList_ProductsList: RecyclerView
+    /*
     private lateinit var LNL_FRGProductsList_NavHome: LinearLayout
     private lateinit var LNL_FRGProductsList_NavCart: LinearLayout
     private lateinit var LNL_FRGProductsList_NavProfile: LinearLayout
@@ -33,8 +34,11 @@ class FragmentProductsList : Fragment() {
     private lateinit var TXV_FRGProductsList_NavCart: TextView
     private lateinit var IMV_FRGProductsList_NavProfile: ImageView
     private lateinit var TXV_FRGProductsList_NavProfile: TextView
+    */
     private lateinit var adapterProducts: AdapterProducts
     private var listaProductos = mutableListOf<product>()
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -47,18 +51,18 @@ class FragmentProductsList : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initializeViews(view)
-        configureNavigationState()
         configureListeners()
         configureRecyclerView()
         loadSampleProducts()
     }
 
     private fun initializeViews(view: View) {
-        IMV_FRGProductsList_ShoppingCart = view.findViewById(R.id.IMV_FRGProductsList_ShoppingCart)
-        IMV_FRGProductsList_Search = view.findViewById(R.id.IMV_FRGProductsList_Search)
-        ETX_FRGProductsList_Search = view.findViewById(R.id.ETX_FRGProductsList_Search)
-        BTN_FRGProductsList_AddProduct = view.findViewById(R.id.BTN_FRGProductsList_AddProduct)
-        RCV_FRGProductsList_ProductsList = view.findViewById(R.id.RCV_FRGProductsList_ProductsList)
+        IMV_FRGProductsList_ShoppingCart=view.findViewById(R.id.IMV_FRGProductsList_ShoppingCart)
+        IMV_FRGProductsList_Search=view.findViewById(R.id.IMV_FRGProductsList_Search)
+        ETX_FRGProductsList_Search=view.findViewById(R.id.ETX_FRGProductsList_Search)
+        BTN_FRGProductsList_AddProduct=view.findViewById(R.id.BTN_FRGProductsList_AddProduct)
+        RCV_FRGProductsList_ProductsList=view.findViewById(R.id.RCV_FRGProductsList_ProductsList)
+        /*
         LNL_FRGProductsList_NavHome = view.findViewById(R.id.LNL_FRGProductsList_NavHome)
         LNL_FRGProductsList_NavCart = view.findViewById(R.id.LNL_FRGProductsList_NavCart)
         LNL_FRGProductsList_NavProfile = view.findViewById(R.id.LNL_FRGProductsList_NavProfile)
@@ -68,26 +72,8 @@ class FragmentProductsList : Fragment() {
         TXV_FRGProductsList_NavCart = view.findViewById(R.id.TXV_FRGProductsList_NavCart)
         IMV_FRGProductsList_NavProfile = view.findViewById(R.id.IMV_FRGProductsList_NavProfile)
         TXV_FRGProductsList_NavProfile = view.findViewById(R.id.TXV_FRGProductsList_NavProfile)
-    }
 
-    private fun configureNavigationState() {
-        val colorActive = ContextCompat.getColor(requireContext(), R.color.navActive)
-        val colorInactive = ContextCompat.getColor(requireContext(), R.color.navInactive)
-
-        // Home (Active)
-        IMV_FRGProductsList_NavHome.setColorFilter(colorActive)
-        TXV_FRGProductsList_NavHome.setTextColor(colorActive)
-        TXV_FRGProductsList_NavHome.setTypeface(null, Typeface.BOLD)
-
-        // Cart (Inactive)
-        IMV_FRGProductsList_NavCart.setColorFilter(colorInactive)
-        TXV_FRGProductsList_NavCart.setTextColor(colorInactive)
-        TXV_FRGProductsList_NavCart.setTypeface(null, Typeface.NORMAL)
-
-        // Profile (Inactive)
-        IMV_FRGProductsList_NavProfile.setColorFilter(colorInactive)
-        TXV_FRGProductsList_NavProfile.setTextColor(colorInactive)
-        TXV_FRGProductsList_NavProfile.setTypeface(null, Typeface.NORMAL)
+         */
     }
 
     private fun configureListeners() {
@@ -95,31 +81,25 @@ class FragmentProductsList : Fragment() {
             Toast.makeText(requireContext(), getString(R.string.addProduct), Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_product_list_to_add_product)
         }
+        /*
         IMV_FRGProductsList_ShoppingCart.setOnClickListener {
             findNavController().navigate(R.id.action_products_list_to_cart)
         }
-        LNL_FRGProductsList_NavCart.setOnClickListener {
-            findNavController().navigate(R.id.action_products_list_to_cart)
-        }
-        LNL_FRGProductsList_NavProfile.setOnClickListener {
-            findNavController().navigate(R.id.action_products_list_to_profile)
-        }
+
+         */
     }
 
     private fun configureRecyclerView() {
-        adapterProducts = AdapterProducts(
+        adapterProducts=AdapterProducts(
             productsList = listaProductos,
-            clickOnBuy = { product ->
-                Toast.makeText(
-                    requireContext(),
-                    getString(R.string.addCart) + "${product.name}",
-                    Toast.LENGTH_SHORT
-                ).show()
+            clickOnBuy = {product ->
+                Toast.makeText(requireContext(),getString(R.string.addCart)+"${product.name}",
+                    Toast.LENGTH_SHORT).show()
             }
         )
         RCV_FRGProductsList_ProductsList.apply {
-            layoutManager = LinearLayoutManager(requireContext())
-            adapter = adapterProducts
+            layoutManager= LinearLayoutManager(requireContext())
+            adapter=adapterProducts
         }
     }
 

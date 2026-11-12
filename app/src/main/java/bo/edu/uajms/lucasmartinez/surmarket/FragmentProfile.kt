@@ -35,11 +35,11 @@ class FragmentProfile : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initializeViews(view)
-        configureNavigationState()
         configureListeners()
     }
 
     private fun initializeViews(view: View) {
+        /*
         LNL_FRGProfile_NavHome = view.findViewById(R.id.LNL_FRGProfile_NavHome)
         LNL_FRGProfile_NavCart = view.findViewById(R.id.LNL_FRGProfile_NavCart)
         LNL_FRGProfile_NavProfile = view.findViewById(R.id.LNL_FRGProfile_NavProfile)
@@ -49,9 +49,12 @@ class FragmentProfile : Fragment() {
         TXV_FRGProfile_NavCart = view.findViewById(R.id.TXV_FRGProfile_NavCart)
         IMV_FRGProfile_NavProfile = view.findViewById(R.id.IMV_FRGProfile_NavProfile)
         TXV_FRGProfile_NavProfile = view.findViewById(R.id.TXV_FRGProfile_NavProfile)
+
+         */
         IMV_FRGProfile_Back = view.findViewById(R.id.IMV_FRGProfile_Back)
     }
 
+    /*
     private fun configureNavigationState() {
         val colorActive = ContextCompat.getColor(requireContext(), R.color.navActive)
         val colorInactive = ContextCompat.getColor(requireContext(), R.color.navInactive)
@@ -72,7 +75,10 @@ class FragmentProfile : Fragment() {
         TXV_FRGProfile_NavProfile.setTypeface(null, Typeface.BOLD)
     }
 
+     */
+
     private fun configureListeners() {
+        /*
         LNL_FRGProfile_NavHome.setOnClickListener {
             findNavController().navigate(R.id.action_profile_to_products_list)
         }
@@ -82,5 +88,12 @@ class FragmentProfile : Fragment() {
         IMV_FRGProfile_Back.setOnClickListener {
             findNavController().navigate(R.id.action_profile_to_products_list)
         }
+
+         */
+
+        IMV_FRGProfile_Back.setOnClickListener {
+            findNavController().popBackStack()
+        }
+
     }
 }
